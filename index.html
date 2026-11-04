@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Delivery</title>
+    <link rel="stylesheet" href="Style.css">
+  <script src="Script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img src="2.jpg" alt="Online food delivery logo">
+            <h1>Online Food  Delivery</h1>
+        </div>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#Food">Our Food</a>
+      <a href="#Menu">Menu</a>
+      <a href="#cart">cart</a>
+      <a href="#Login">Login</a>
+        
+        
+        <a href="#contact">Contact</a>
+        <div class="auth-actions">
+          
+            
+            <button class="nav-btn" type="button" data-action="logout">Log Out</button>
+        </div>
+    </nav>
+
+
+    <main class="container">
+        <section id="home">
+            <h2>Welcome to Online Food Delivery</h2>
+            <p>Enjoy your favourite food at your doorstep! We provide fresh, delicious and hygienic food with fast delivery. Explore our menu, choose your favourite dishes and order online anytime. Good food, great taste, and happy moments!</p>
+            <img class="home-image" src="1.jpg"
+                alt="Onlin Food Delivery " >
+          <video class="home-video" autoplay muted loop playsinline>
+                        <source src="VID.mp4" type="video/mp4">
+                    </video>
+          <section id="Login">
+        
+              <div>
+        <div class="modal-content" role="dialog"  aria-labelledby="login-title">
+          
+            <h3 id="login-title">Login</h3>
+            <form id="login-form" class="register-form">
+                <div>
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" name="loginEmail" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="loginPassword" placeholder="Enter your password"
+                        required>
+                </div>
+                <button class="btn register-submit" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+          </section>
+            <a class="btn home-button-bottom" href="#Food">Order Food</a>
+        </section>
+        
+
+        <section id="about">
+            <h2>About Us</h2>
+            <div class="about-layout">
+                <div class="about-text">
+                    <p>Welcome to our Online Food Delivery Website!
+
+We are here to make your food ordering experience easy, fast and enjoyable. Our website provides a variety of delicious food items, including Indian food, Chinese food, pizza, burgers, sandwiches and many more.
+
+Our main goal is to provide tasty, fresh and quality food at affordable prices. Customers can explore our food menu, check prices, add their favourite items to the cart and place orders online.
+
+Our Mission
+
+To provide delicious food with a simple ordering process and a convenient delivery experience.</p>
+    
+      
+      <h1>Why Choose Us?</h1>
+       <div class="hero-media">
+                <div class="hero-video">
+                    <video autoplay muted loop playsinline>
+                        <source src="1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>           
+      <ol>
+<li>Fresh and tasty food</li>
+<li>Affordable prices</li>
+<li>Easy online ordering</li>
+<li>Different food varieties</li>
+ <li>Fast and convenient delivery</li>
+ <li>Customer satisfaction</li>
+
+        </ol>
+                  <h1>Thank You for Choosing Us!</h1>
+           
+                </div>
+              
+            </div>
+        </section>
+
+      <section id="Food">
+          <section>
+    <div id="Personal Details">
+    <h1>Personal Details</h1>
+    <p>What is your dietary preference</p>
+    <div>
+    <input type="radio" id="veg" name="dietary preference">
+    <label for="Veg">veg</label>
+      </div>
+    
+    <div>
+      <input type="radio" id="Nonveg" name="dietary preference">
+      <label for="Nonveg">Nonveg</label>
+      </div>
+      </div>
+            <h1>Tell us what you like?</h1>
+      <h2>Recommended for you</h2>
+            <div class="variety">
+                <article class="card">
+                    <h3>pizza</h3>
+                    <img class="Food-image" src="3.jpg" alt="pizza">
+                    <p>$99</p>
+                    <button class="bn" onclick="addToCart(' Pizza', 99)">
+        Add to Cart
+    </button>
+      
+                </article>
+
+                <article class="card">
+                    <h3>burger</h3>
+                    <img class="Food-image" src="4.jpg" alt="burger" >
+                    <p>$60</p>
+                      <button class="bn" onclick="addToCart('burger', 60)">
+        Add to Cart
+    </button>
+                    
+                </article>
+
+                <article class="card">
+                    <h3>manchurian</h3>
+                    <img class="Food-image" src="5.jpg" alt="manchurian" >
+                    <p>$120</p>
+                    <button class="bn" onclick="addToCart('manchurian', 120)">
+        Add to Cart
+    </button>
+                    
+                </article>
+
+                <article class="card">
+                    <h3>icecream</h3>
+                    <img class="Food-image" src="6.jpg" alt="icecream" >
+                  <p>$50</p>
+                <button class="bn" onclick="addToCart('icecream', 50)">
+        Add to Cart
+    </button>
+                </article>
+
+                <article class="card">
+                    <h3>chocolatecake</h3>
+                    <img class="Food-image" src="7.jpg" alt="chocolatecake">
+                    <p>$100</p>
+                      <button class="bn" onclick="addToCart('chocolatecake', 100)">
+        Add to Cart
+    </button>
+                </article>
+
+                <article class="card">
+                    <h3>peri peri pizza</h3>
+                    <img class="Food-image" src="8.jpg" alt="peri peri pizza">
+                  <p>$150</p>
+                    <button class="bn" onclick="addToCart('Peri Peri Pizza', 150)">
+        Add to Cart
+    </button>
+                </article>
+            </div>
+        </section>
+          <section id="Menu">
+            <h2>Menu</h2>
+          <div class="variety">
+              
+                    <h3>pizza</h3>
+      
+                    <p>$99</p>
+                    <button class="bn" onclick="addToCart(' Pizza', 99)">
+        Add to Cart
+    </button>
+            <h3>burger</h3>
+      
+                    <p>$60</p>
+                    <button class="bn" onclick="addToCart(' Pizza', 99)">
+        Add to Cart
+    </button>
+    <h3>pasta</h3>
+      
+                    <p>$120</p>
+                    <button class="bn" onclick="addToCart(' Pizza', 99)">
+        Add to Cart
+    </button>
+            <h3>manchurian</h3>
+      
+                    <p>$90</p>
+                    <button class="bn" onclick="addToCart(' Pizza', 99)">
+        Add to Cart
+    </button>
+            <h3>icecream</h3>
+      
+                    <p>$50</p>
+                    <button class="bn" onclick="addToCart(' Pizza', 99)">
+        Add to Cart
+    </button>
+            <h3>chocolatecake</h3>
+      
+                    <p>$150</p>
+                    <button class="bn" onclick="addToCart(' Pizza', 99)">
+        Add to Cart
+    </button>
+            <h3>cheese burgers</h3>
+      
+                    <p>$99</p>
+                    <button class="bn" onclick="addToCart(' Pizza', 99)">
+        Add to Cart
+    </button>
+            <h3>samosa</h3>
+      
+                    <p>$25</p>
+                    <button class="bn" onclick="addToCart(' Pizza', 99)">
+        Add to Cart
+    </button>
+          </div>
+          </section>
+     <section class="cart" id="cart">
+
+    <h2>Your Shopping Cart</h2>
+
+    <div id="cart-items">
+        <p>Your cart is empty!</p>
+    </div>
+
+    <h3>Total: ₹<span id="total">0</span></h3>
+
+    <button class="bn" onclick="placeOrder()">
+        Place Order
+    </button>
+
+</section>
+
+        <section>
+            <h1 class="c">Thank you for choosing us! 
+We truly appreciate your order.
+Have a delicious day!</h1>
+            
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-heading">
+                    <h3>Online Food Delivery</h3>
+                    
+                </div>
+                <article class="contact-card">
+                    <h3>Name</h3>
+                    <p>Onlin Food Delivery</p>
+                </article>
+                <article class="contact-card">
+                    <h3>Email</h3>
+                    <p>Onlinefood@gmail.com</p>
+                </article>
+                <article class="contact-card">
+                    <h3>Address</h3>
+                    <p>Taluka Ahmedpur, District Latur</p>
+                </article>
+                <article class="contact-card">
+                    <h3>Contact Number</h3>
+                    <p>9270231862</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>@2026 Online Food Delivery</p>
+    </footer>
+  
+</body>
+
+</html>
